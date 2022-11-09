@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    color: #404040;
+}
+
+        /* Typography*/
+ h1 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: #fff;
+    margin: 0;
+ }       
+
+ h1 + p {
+    color: #f18119;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.3125rem;
+ }
+
+ h2 {
+    font-size: 1.3125rem;
+    font-weight: 900;
+  
+ }
+
+ h2 + p {
+    color: #f18119;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+ }
+
+ .top-text {
+    font-size: 0.625rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #f18119;
+    order: -1;
+    border-top: 5px solid #f18119; 
+    border-image: linear-gradient(to right, #ffa51d, #ff713b) 1;
+    padding-top: .23em;
+    text-transform: uppercase;
+ }
+
+ .fine-print {
+  font-size: 0.625rem;
+ }
+
+         /* intro section */
+  .intro {
+    background-image: url(images/dark-ribs.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 .5em 2em;
+  } 
+  
+  
+
+          /* main-content */
+
+  .main-content {
+    padding: 2em 1em;
+  } 
+
+  .container {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+    align-items: center;
+  } 
+
+
+       /* form */
+  .form-body {
+    width: 80%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }     
+
+  input,
+  .btn {
+    width: 100%;
+  }
+  
+  input {
+    margin-bottom: .75em;
+    padding: .5em;
+    border: 1px solid #404040;
+    font-family: inherit;
+    text-align: inherit;
+    transition: transform 250ms;
+    transform: scale(1);
+  }
+   
+  input:focus {
+    transform: scale(1.1);
+  }
+
+  .btn {
+    display: inline-block;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 0.625rem;
+    padding: .5em;
+    border: 0;
+    letter-spacing: 1px;
+  }
+
+  .btn-primary {
+    color: #fff;
+    background: linear-gradient(to right, #ffa51d, #ff713b);
+    transform: scale(1);
+    transition: transform 250ms;
+  }
+
+  .btn-primary:hover,
+  .btn-primary:focus {
+   transform: scale(1.1);
+  }
+
+  .btn,
+  input {
+    border-radius: 5px;
+  }
+
+  
+
+        /* media queries */
+
+  @media (min-width: 550px) {
+    body {
+      font-size: 1.125rem;
+      display: flex;
+     
+    }
+    
+    h1 {
+      font-size: 2.8rem;
+    }
+
+    h2,
+    h1 + p {
+      font-size: 1.4rem;
+    }
+   
+   .fine-print {
+    font-size: 0.625rem;
+    letter-spacing: 1px;
+   }
+
+    .intro,
+    .main-content {
+      width: 50%;
+      min-height: 100vh;
+    }
+    
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  .container-intro {
+    height: 100%;
+  }
+
+  
